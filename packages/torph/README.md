@@ -107,6 +107,25 @@ const handleComplete = () => {
 />
 ```
 
+#### Svelte Action (`use:`)
+
+```svelte
+<script>
+  import { textMorph } from "torph/svelte";
+
+  let text = "Hello World";
+</script>
+
+<h1
+  use:textMorph={{
+    text,
+    duration: 400,
+    ease: "cubic-bezier(0.19, 1, 0.22, 1)",
+    locale: "en"
+  }}
+></h1>
+```
+
 ### Vanilla JS
 
 ```js

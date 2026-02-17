@@ -66,6 +66,6 @@ export default defineConfig((options) => [
     dts: {
       only: true,
     },
-    external: ["svelte", "../lib/text-morph/types"],
+    external: ["svelte", "svelte/action", "../lib/text-morph/types"],
   },
 ]);
